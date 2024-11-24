@@ -1,0 +1,12 @@
+type: ArmoredConveyor
+name: Destruction Armored Conveyor
+health: 1000
+speed: 0.18
+displayedSpeed: 25
+category: distribution
+research: Destruction_Conveyor
+requirements: [
+    Iron/2
+    Gold/2
+    Diamond/1
+]

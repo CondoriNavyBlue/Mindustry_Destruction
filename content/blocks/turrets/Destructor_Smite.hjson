@@ -1,0 +1,365 @@
+type: ItemTurret
+name: Destructor Smite
+size: 5
+shoot: {
+  type: ShootMulti
+  source : {
+    type: ShootAlternate
+    spread: 6.27
+    shots: 5
+    barrels: 5
+  }
+  dest: [
+    {
+      type: ShootHelix
+      scl: 4.5
+      mag: 3.75
+    }
+  ]
+}
+shootSound: shootSmite
+minWarmup: 0.99
+coolantMultiplier: 6
+shootLength: 5
+shake: 2
+ammoPerShot: 2
+shootWarmupSpeed: 0.04
+shootY: 15
+outlineColor: 2d2f39
+envEnabled: 3
+warmupMaintainTime: 30
+reload: 100
+recoil: 2
+range: 420
+shootCone: 30
+health: 11750
+rotateSpeed: 1.5
+loopSound: glow
+loopSoundVolume: 0.8
+consumes: {
+  coolant: {
+    type: ConsumeCoolant
+    liquid: water
+    amount: 0.25
+  }
+}
+ammoTypes: {
+  surge-alloy :{
+    type: BasicBulletType
+    speed: 8
+    damage: 567
+    lifetime: 60
+    sprite: large-orb
+    widht: 17
+    height: 21
+    hitSize: 8
+    shootEffect: [
+      shootTitan
+      colorSparkBig 
+      {
+        type: WaveEffect
+        colorFrom: ffd37f
+        colorTo: ffd37f
+        lifetime: 12
+        sizeTo: 20
+        strokeFrom: 3
+        strokeTo: 0.3
+      }
+    ]
+    smokeEffect: shootSmokeSmite
+    ammoMultiplier: 1
+    pierceCap: 6
+    pierce: true
+    pierceBuilding: true
+    hitColor: ffd37f
+    backColor: ffd37f
+    trailColor: ffd37f
+    frontColor: ffffff
+    trailWidth: 2.8
+    trailLength: 10
+    hitEffect: hitBulletColor
+    buildingDamageMultiplier: 0.3
+    despawnEffect: [
+      hitBulletColor
+      {
+        type: WaveEffect
+        sizeTo: 30
+        colorFrom: ffd37f
+        colorTo: ffd37f
+        lifetime: 12
+      }
+    ]
+    trailRotation: true
+    trailEffect: disperseTrail
+    trailInterval: 3
+    intervalBullet: {
+      type: LightningBulletType
+      damage: 80
+      collidesAir: false
+      lightningColor: ffd37f
+      lightningLength: 5
+      lightningLengthRand: 1
+      buildingDamageMultiplier: 0.25
+      lightningType: {
+        type: BulletType
+        speed: 0.0001
+        damage: 0
+        lifetime: 10
+        hitEffect: hitLancer
+        despawnEffect: none
+        status: shocked
+        statusDuration: 10
+        hittable: false
+        lightColor: ffffff
+        buildingDamageMultiplier: 0.25
+      }
+    }
+    bulletInterval: 3
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: reinforced-
+  parts:[
+    {
+      type: RegionPart
+      suffix: -mid
+      heatProgress: heat
+      mirror: false
+    }
+    {
+      type: RegionPart
+      suffix: -blade
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      moveX: 5.5
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          x: 0
+          y: -3
+          rot: 0
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -front
+      progress: warmup
+      heatProgress: recoil
+      mirror: true
+      under: true
+      moveX: 6.5
+      moveY: 4
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          x: 0
+          y: -5.5
+          rot: 0
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -back
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      moveX: 5.5
+    }
+    {
+      type: ShapePart
+      progress: warmup
+      color: ffd37f
+      circle: true
+      hollow: true
+      stroke: 0
+      strokeTo: 2
+      radius: 10
+      layer: 110
+      y: -15
+      rotateSpeed: 1
+    }
+    {
+      type: ShapePart
+      progress: warmup
+      color: ffd37f
+      circle: true
+      hollow: true
+      stroke: 0
+      strokeTo: 1.6
+      radius: 4
+      layer: 110
+      y: -15
+      rotateSpeed: 1
+    }
+    {
+      type: HaloPart
+      progress: warmup
+      color: ffd37f
+      layer: 110
+      y: -15
+      haloRotation: 90
+      shapes: 2
+      triLength: 0
+      triLengthTo: 20
+      haloRadius: 16
+      tri: true
+      radius: 4
+    }
+    {
+      type: HaloPart
+      progress: warmup
+      color: ffd37f
+      layer: 110
+      y: -15
+      haloRotateSpeed: -1
+      haloRotation: 45
+      shapes: 4
+      triLength: 0
+      triLengthTo: 5
+      haloRadius: 16
+      tri: true
+      radius: 8
+    }
+    {
+      type: HaloPart
+      progress: warmup
+      color: ffd37f
+      layer: 110
+      y: -15
+      haloRotateSpeed: -1
+      shapeRotation: 180
+      haloRotation: 45
+      shapes: 4
+      triLength: 0
+      triLengthTo: 2
+      haloRadius: 16
+      tri: true
+      radius: 8
+    }
+    {
+      type: HaloPart
+      progress: warmup
+      color: ffd37f
+      layer: 110
+      y: -15
+      haloRotateSpeed: 1
+      haloRotation: 45
+      shapes: 4
+      triLength: 0
+      triLengthTo: 3
+      haloRadius: 10
+      tri: true
+      radius: 6
+    }
+    {
+      type: RegionPart
+      suffix: -blade-bar
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      outline: false
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      y: 11
+      moveX: 2
+      color: ffd37f
+    }
+    {
+      type: RegionPart
+      suffix: -blade-bar
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      outline: false
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      y: 1.5
+      moveX: 2
+      color: ffd37f
+    }
+    {
+      type: RegionPart
+      suffix: -blade-bar
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      outline: false
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      y: -8
+      moveX: 2
+      color: ffd37f
+    }
+    {
+      type: RegionPart
+      suffix: -spine
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      moveY: -5.5
+      moveX: 15
+      moveRot: 0
+    }
+    {
+      type: RegionPart
+      suffix: -spine
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      moveY: -8.5
+      moveX: 14
+      moveRot: -30
+    }
+    {
+      type: RegionPart
+      suffix: -spine
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      moveY: -11.5
+      moveX: 13
+      moveRot: -60
+    }
+    {
+      type: RegionPart
+      suffix: -spine
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      under: true
+      layerOffset: -0.3
+      turretHeatLayer: 49.8
+      moveY: -14.5
+      moveX: 12
+      moveRot: -90
+    }
+  ]
+}
+requirements: [
+  oxide/660
+  surge-alloy/ 1000
+  silicon/1600
+  carbide/1200
+  phase-fabric/900
+]
+category: turret
+research: smite

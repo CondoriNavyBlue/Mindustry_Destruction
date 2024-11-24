@@ -1,0 +1,32 @@
+//type: ItemTurret
+name: Destructor Fuse
+reload: 30
+shake: 4
+range: 110
+recoil: 5
+shoot: {
+  type: ShootSpread
+  shots: 3
+  spread: 17.5
+}
+shootCone: 30
+health: 9900
+consumes: {
+  coolant: {
+    type: ConsumeCoolant
+    amount: 0.3
+  }
+}
+size: 3
+envEnabled: 3
+shootSound: shotgun_D
+requirements: [
+  copper/300
+  graphite/450
+  thorium/250
+  Iron/500
+  Gold/500
+]
+buildCostMultiplier: 1.5
+category: turret
+research: fuse

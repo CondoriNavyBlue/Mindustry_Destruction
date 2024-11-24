@@ -1,0 +1,32 @@
+//type: GenericCrafter
+name: HPHT Synthesizer
+description: "The [red]heat [lightgray]should be kept high.\nKeep the amount of slag above 80% of capacity."
+size: 5
+hasPower: true
+hasLiquids: true
+hasItems: true
+liquidCapacity: 1500
+itemCapacity: "40"
+craftTime: 300
+craftEffect: bigShockwave
+buildCostMultiplier: 0.5
+requirements: [
+  copper/500
+  Iron/1000
+  silicon/600
+  graphite/500
+  Sodium_Battery/1000
+  metaglass/200
+]
+consumes: {
+  power: 20
+  items: {
+    items: [
+      graphite/20
+    ]
+  }
+  liquid: slag/0.6
+}
+outputItem: Diamond/5
+category: crafting
+research: Sand_Sieve_Machine

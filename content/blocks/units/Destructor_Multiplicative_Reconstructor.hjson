@@ -1,0 +1,33 @@
+type: Reconstructor
+name: Destructor Multiplicative Reconstructor
+heatlth: 4800
+requirements:[
+  lead/1250
+  silicon/1000
+  titanium/900
+  thorium/850
+  Iron/1000
+]
+category: units
+size: 5
+consumes: {
+  power: 15
+  items: {
+    items: [
+      silicon/500
+      Sodium_Battery/500
+      Iron/250
+    ]
+  }
+}
+upgrades: [
+  [Destructor_Mace,Destructor_Fortress],
+  [Destructor_Atrax,Destructor_Spiroct],
+  [Destructor_Pulsar,Destructor_Quasar],
+  [Destructor_Horizon,Destructor_Zenith],
+  [Builder_Poly,Destructor_Mega],
+  [Destructor_Minke,Destructor_Bryde],
+  [Destructor_Oxynoe,Destructor_Cyerce]
+]
+constructTime: 1800
+research: Destructor_Additive_Reconstructor

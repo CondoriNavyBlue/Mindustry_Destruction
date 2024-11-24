@@ -1,0 +1,30 @@
+type: Drill
+category: production
+requirements:[
+    copper/1200
+    silicon/1000
+    thorium/800
+    Iron/900
+    Gold/750
+    Diamond/440
+]
+name: Big Destruction Drill
+tier: 20
+size: 10
+drawRim: true
+drillTime: 60
+updateEffect: pulverizeRed
+drillEffect: mineHuge
+hasPower: true
+liquidBoostIntensity: 2
+liquidCapacity: 120
+itemCapacity: 200
+rotateSpeed: -1
+health: 12000
+consumes: {
+  power: 26
+  liquid: {
+    liquid: slag
+    amount: 0.8
+  }
+}

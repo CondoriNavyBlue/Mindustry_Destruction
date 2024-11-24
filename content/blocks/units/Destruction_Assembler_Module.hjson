@@ -1,0 +1,18 @@
+type: UnitAssemblerModule
+name: Destruction Assembler Module
+heatlth: 8500
+requirements:[
+  thorium/1000
+  phase-fabric/850
+  oxide/500
+  carbide/700
+]
+category: units
+size: 5
+consumes: {
+  power:10
+}
+tier: 2
+regionSuffix: -dark
+researchCostMultiplier: 0.75
+research: basic-assembler-module

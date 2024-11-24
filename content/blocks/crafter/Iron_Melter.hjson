@@ -1,0 +1,42 @@
+type: GenericCrafter
+name: Iron_Melter
+size: 1
+hasPower: true
+hasLiquids: true
+liquidCapacity: 20
+itemCapacity: 10
+craftTime: 30
+craftEffect: none
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: slag
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+requirements: [
+  copper/50
+  lead/50
+  graphite/50
+  Gold/20
+]
+consumes: {
+  power: 2
+  items: {
+    items: [
+      Iron/1
+    ]
+  }
+}
+outputLiquid: slag/0.4
+category: crafting
+research: melter

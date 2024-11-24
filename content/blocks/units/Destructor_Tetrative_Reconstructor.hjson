@@ -1,0 +1,41 @@
+type: Reconstructor
+name: Destructor Tetrative Reconstructor
+heatlth: 8125
+requirements:[
+  lead/5000
+  silicon/4000
+  thorium/2000
+  plastanium/1200
+  phase-fabric/1200
+  surge-alloy/1000
+  Iron/2400
+  Gold/1600
+  Diamond/1000
+]
+category: units
+size: 9
+consumes: {
+  power: 27.5
+  items: {
+    items: [
+      silicon/1750
+      Sodium_Battery/1500
+      Iron/2000
+      Gold/1000
+      Diamond/1000
+    ]
+  }
+  liquid: slag/4
+}
+upgrades: [
+  [Destructor_Scepter,Destructor_Reign],
+  [Destructor_Arkyid,Destructor_Toxopid],
+  [Destructor_Vela,Destructor_Corvus],
+  [Destructor_Antumbra,Destructor_Eclipse],
+  [Destructor_Quad,Patron_Oct],
+  [Destructor_Sei,Destructor_Omura],
+  [Destructor_Aegires,Destructor_Navanax]
+]
+constructTime: 14400
+liquidCapacity: 240
+research: Destructor_Exponential_Reconstructor

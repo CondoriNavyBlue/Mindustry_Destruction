@@ -1,0 +1,35 @@
+explosionRadius: 30
+explosionDamage: 8000
+health: 8000
+description: "[red]Don't Explode"
+//type: NuclearReactor
+name: "G ThoriumReactor"
+itemCapacity: 50
+liquidCapacity: 50
+ambientSound: hum
+ambientSoundVolume: 0.24
+size: 3
+heating: 0.02
+coolantPower: 0.5
+hasLiquids: true
+powerProduction: 75
+itemDuration: 360
+fuelItem: High_Density_Thorium
+consumes: {
+  items: {
+    items: [
+      High_Density_Thorium/1
+    ]
+  }
+}
+requirements: [
+	High_Density_Thorium/330
+	phase-fabric/100
+	silicon/400
+	Iron/500
+	Gold/25
+	surge-alloy/50
+	Sodium_Battery/250
+]
+category: power
+research: thorium-reactor

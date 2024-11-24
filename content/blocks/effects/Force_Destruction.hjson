@@ -1,0 +1,27 @@
+type: ForceProjector
+name: Force Destruction
+health: 6000
+size: 3
+phaseRadiusBoost: 100
+radius: 180
+shieldHealth: 5000
+cooldownNormal: 2.5
+cooldownLiquid: 1.8
+cooldownBrokenBase: 1
+itemCapacity: 50
+consumes: {
+  power: 10
+  items: {
+    items:[
+      phase-fabric/5
+    ]
+  }
+}
+research: force-projector
+requirements:[
+    lead/350
+    titanium/150
+    silicon/175
+    Diamond/25
+]
+category: effect

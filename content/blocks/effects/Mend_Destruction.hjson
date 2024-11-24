@@ -1,0 +1,28 @@
+type: MendProjector
+name: Mend Destruction
+requirements: [
+  lead/200
+  titanium/130
+  silicon/130
+  Sodium_Battery/300
+  surge-alloy/120
+]
+category: effect
+size: 3
+reload: 200
+range: 180
+phaseBoost: 0
+hasBoost: 0
+phaseRangeBoost: 0
+healPercent: 20
+health: 3500
+consumes: {
+  power: 7
+  items:{
+    items:[
+      phase-fabric/1
+      silicon/1
+    ]
+  }
+}
+research: mend-projector

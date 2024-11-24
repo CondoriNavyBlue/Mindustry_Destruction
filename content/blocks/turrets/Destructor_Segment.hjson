@@ -1,0 +1,22 @@
+type: PointDefenseTurret
+name: Destructor Segment
+hasPower: true
+size: 2
+range: 224
+bulletDamage: 56
+health: 1650
+reload: 4
+envEnabled: 3
+shootLength: 5
+consumes: {
+  power: 15
+}
+requirements: [
+  silicon/260
+  thorium/160
+  phase-fabric/120
+  Gold/500
+  Sodium_Battery/500
+]
+category: turret
+research: segment

@@ -1,0 +1,29 @@
+type: GenericCrafter
+name: Radioactive Substance Compressor
+size: 2
+hasPower: true
+hasLiquids: false
+hasItems: true
+itemCapacity: 30
+craftTime: 30
+craftEffect: smeltsmoke
+buildCostMultiplier: 0.25
+health: 1775
+requirements: [
+  copper/150
+  lead/140
+  Iron/250
+  Sodium_Battery/150
+  graphite/100
+]
+consumes: {
+  power: 5
+  items: {
+    items: [
+      thorium/5
+    ]
+  }
+}
+outputItem: High_Density_Thorium/1
+category: crafting
+research: Sand_Sieve_Machine

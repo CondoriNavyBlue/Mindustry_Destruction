@@ -1,0 +1,11 @@
+name: Large Gold Wall
+type: Wall
+health: 5000
+size: 2
+absorbLasers: true
+buildCostMultiplier: 5
+category: defense
+requirements: [
+    Gold/32
+]
+research: Gold_Wall

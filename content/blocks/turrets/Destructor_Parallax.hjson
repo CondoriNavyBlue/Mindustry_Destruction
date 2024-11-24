@@ -1,0 +1,24 @@
+//type: TractorBeamTurret
+name: Destructor Parallax
+hasPower: true
+size: 2
+force: 0
+scaledForce: 0
+range: 800
+damage: 10
+health: 5000
+unitSort: weakest
+rotateSpeed: 25
+targetGround: true
+consumes: {
+  power: 15
+}
+requirements: [
+  graphite/260
+  thorium/100
+  silicon/350
+  Iron/200
+  Sodium_Battery/600
+]
+category: turret
+research: parallax

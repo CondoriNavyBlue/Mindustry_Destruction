@@ -1,0 +1,40 @@
+type: GenericCrafter
+name: Electric HPHT
+description: "generate heat with electricity\nMore convenient than HPHT synthesizer.\nBut uses a lot of electricity."
+size: 3
+hasPower: true
+hasItems: true
+itemCapacity: 40
+craftTime: 240
+craftEffect: smeltsmoke
+buildCostMultiplier: 0.25
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFlame
+      flameColor: ff0000
+    }
+  ]
+}
+requirements: [
+  lead/500
+  Gold/1000
+  silicon/1000
+  graphite/250
+  Sodium_Battery/2000
+]
+consumes: {
+  power: 50
+  items: {
+    items: [
+      graphite/20
+    ]
+  }
+}
+outputItem: Diamond/4
+category: crafting
+research: HPHT

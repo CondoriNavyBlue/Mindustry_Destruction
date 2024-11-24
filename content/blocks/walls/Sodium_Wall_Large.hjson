@@ -1,0 +1,10 @@
+name: Large Sodium Wall
+type: Wall
+health: 1800
+size: 2
+buildCostMultiplier: 1.5
+category: defense
+requirements: [
+    Sodium/16
+]
+research: Sodium_Wall

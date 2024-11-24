@@ -1,0 +1,150 @@
+type: ItemTurret
+name: Destructor Cyclone
+shootY: 8.75
+shoot: {
+  type: ShootBarrel
+  barrels: [0,1,0,3,0,0,-3,0,0]
+}
+reload: 6
+range: 300
+size: 3
+recoil: 3
+rotateSpeed: 12
+inaccuracy: 8
+shootCone: 30
+shootSound: shootSnap
+health: 9800
+consumes: {
+  coolant:{
+    type: ConsumeCoolant
+    amount: 0.3
+  }
+}
+ammoTypes: {
+  metaglass: {
+    type: FlakBulletType
+    speed: 5
+    damage: 20
+    lifetime: 60
+    ammoMultiplier: 2
+    shootEffect: shootSmall
+    reloadMultiplier: 0.8
+    width: 6
+    height: 8
+    hitEffect: flakExplosion
+    splashDamage: 64
+    splashDamageRadius: 30
+    explodeRange: 24
+    collidesGround: true
+    fragBullets: 4
+    fragBullet: {
+      type: BasicBulletType
+      speed: 3
+      damage: 20
+      sprite: bullet
+      shrinkY: 1
+      width: 5
+      height: 12
+      lifetime: 20
+      backColor: 464646
+      frontColor: ffffff
+      despawnEffect: none
+    }
+  }
+  blast-compound: {
+    type: FlakBulletType
+    speed: 5
+    lifetime: 60
+    damage: 80
+    shootEffect: shootBig
+    ammoMultplier: 5
+    splashDamage: 80
+    splashDamageRadius: 70
+    collidesGround: true
+    status: blasted
+    statusDuration: 120
+  }
+  plastanium: {
+    type: FlakBulletType
+    speed: 5
+    damage: 25
+    ammoMultiplier: 4
+    lifetime: 60
+    splashDamageRadius:48
+    splashDamage: 77
+    hitEffect: plasticExplosion
+    frontColor: fffac6
+    backColor: d8d97f
+    shootEffect: shootBig
+    collidesGround: true
+    explodeRange: 28
+    fragBullets: 6
+    fragBullet: {
+      type: BasicBulletType
+      speed: 3
+      damage: 24
+      sprite: bullet
+      width: 10
+      height: 12
+      shrinkY: 1
+      lifetime: 15
+      backColor: d8d97f
+      frontColor: fffac6
+      despawnEffect: none
+    }
+  }
+  surge-alloy: {
+    type: FlakBulletType
+    speed: 5.5
+    damage: 32
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 100
+    splashDamageRadius: 42
+    lightning: 3
+    lightningLength: 8
+    shootEffect: shootBig
+    collidesGround: true
+    explodeRange: 30
+  }
+  Diamond: {
+    type: FlakBulletType
+    speed: 5.5
+    damage: 66
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 160
+    splashDamageRadius: 56
+    shootEffect: shootBig
+    collidesGround: true
+    explodeRange: 30
+    frontColor: e7f7f6
+    backColor: 79f7f2
+    fragBullets: 8
+    fragBullet: {
+      type: BasicBulletType
+      speed: 5
+      damage: 32
+      width: 3
+      height: 15
+      shrinkY : 0
+      lifetime: 15
+      frontColor: e7f7f6
+      backColor: 79f7f2
+      despawnEffect: none
+    }
+  }
+}
+requirements: [
+  copper/800
+  thorium/750
+  plastanium/500
+  surge-alloy/350
+  Iron/500
+  Gold/350
+  Diamond/250
+  Sodium_Battery/500
+]
+buildCostMultiplier: 0.8
+category: turret
+research: cyclone

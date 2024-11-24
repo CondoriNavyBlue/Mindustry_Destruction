@@ -1,0 +1,84 @@
+type: LiquidTurret
+name: Destructor Tsunami
+size: 3
+targetFlags: [turret,extinguisher]
+shoot: {
+  shots: 32
+}
+inaccuracy: 30
+reload: 20
+shootSound: Dspray
+loopSound: none
+velocityRnd: 0.25
+recoil: 3
+shootCone: 45
+liquidCapacity: 60
+shootEffect: shootLiquid
+range: 280
+health: 3200
+ammoTypes: {
+  water: {
+    type: LiquidBulletType
+    liquid: water
+    lifetime: 50
+    speed: 5.8
+    knockback: 3
+    puddleSize: 10
+    orbSize: 5
+    drag: 0.001
+    ammoMultiplier: 0.033
+    statusDuration: 360
+    damage: 2
+    layer: 98
+  }
+  slag: {
+    type: LiquidBulletType
+    liquid: slag
+    lifetime: 50
+    speed: 5.8
+    knockback: 2.66
+    puddleSize: 10
+    orbSize: 5
+    drag: 0.001
+    ammoMultiplier: 0.033
+    statusDuration: 360
+    damage: 5
+  }
+  cryofluid: {
+    type: LiquidBulletType
+    liquid: cryofluid
+    lifetime: 50
+    speed: 5.8
+    knockback: 2.66
+    puddleSize: 10
+    orbSize: 5
+    drag: 0.001
+    ammoMultiplier: 0.033
+    statusDuration: 360
+    damage: 2
+  }
+  oil: {
+    type: LiquidBulletType
+    liquid: oil
+    lifetime: 50
+    speed: 5.8
+    knockback: 2.66
+    puddleSize: 10
+    orbSize: 5
+    drag: 0.001
+    ammoMultiplier: 0.033
+    statusDuration: 360
+    damage: 2
+    layer: 98
+  }
+}
+requirements: [
+  metaglass/500
+  lead/800
+  thorium/650
+  phase-fabric/50
+  Iron/400
+]
+buildCostMultiplier: 0.8
+category: turret
+research: tsunami

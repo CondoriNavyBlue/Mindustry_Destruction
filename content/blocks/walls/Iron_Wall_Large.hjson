@@ -1,0 +1,11 @@
+name: Large Iron Wall
+type: Wall
+health: 3600
+size: 2
+chanceDeflect: 10
+buildCostMultiplier: 10
+category: defense
+requirements: [
+    Iron/32
+]
+research: Iron_Wall

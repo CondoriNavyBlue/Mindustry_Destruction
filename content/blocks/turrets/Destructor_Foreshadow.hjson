@@ -1,0 +1,35 @@
+//type: ItemTurret
+name: Destructor Foreshadow
+size: 4
+range: 600
+ammoPerShot: 5
+maxAmmo: 50
+rotateSpeed: 2.5
+reload: 150
+ammoUseEffect: casing3Double
+recoil: 5
+cooldownTime: 150
+shake: 4
+shootCone: 2
+shootSound: railgun_D
+buildCostMultiplier: 1.25
+coolantMultiplier: 0.4
+health: 13500
+consumes: {
+  power: 33.333333333333336
+  coolant: {
+    type: ConsumeCoolant
+    amount: 1
+  }
+}
+category: turret
+requirements: [
+  lead/2000
+  metaglass/1200
+  surge-alloy/600
+  plastanium/500
+  silicon/1200
+  Sodium_Battery/1250
+  Diamond/700
+]
+research: foreshadow

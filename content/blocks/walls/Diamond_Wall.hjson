@@ -1,0 +1,12 @@
+name: Diamond Wall
+type: Wall
+health: 1750
+flashHit: true
+size: 1
+chanceDeflect: 30
+buildCostMultiplier: 5
+category: defense
+requirements: [
+    Diamond/8
+]
+research: Gold_Wall

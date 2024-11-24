@@ -1,0 +1,21 @@
+type: Drill
+category: production
+requirements:[
+    copper/20
+    Iron/15
+]
+name: Iron Drill
+tier: 3
+size: 2
+rotateSpeed: -2
+drillTime: 333.3333333333333
+health: 800
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.06666666666666666
+    booster: true
+    optional: true
+  }
+}
+research: pneumatic-drill

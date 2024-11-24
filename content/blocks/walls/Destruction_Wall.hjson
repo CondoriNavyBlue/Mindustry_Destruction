@@ -1,0 +1,20 @@
+name: Destruction Wall
+type: Wall
+health: 2500
+size: 1
+absorbLasers: true
+chanceDeflect: 50
+lightningChance: 0.2
+lightningDamage: 100
+lightningLength: 30
+lightningColor: ed655a
+flashHit: true
+flashColor: ed655a
+buildCostMultiplier: 7.5
+category: defense
+requirements: [
+    Iron/8
+    Gold/8
+    Diamond/8
+]
+research: Diamond_Wall_Large

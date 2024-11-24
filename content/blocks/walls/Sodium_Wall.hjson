@@ -1,0 +1,10 @@
+name: Sodium Wall
+type: Wall
+health: 450
+size: 1
+buildCostMultiplier: 1.5
+category: defense
+requirements: [
+    Sodium/4
+]
+research: titanium-wall

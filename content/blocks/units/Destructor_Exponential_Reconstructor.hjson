@@ -1,0 +1,39 @@
+type: Reconstructor
+name: Destructor Exponential Reconstructor
+heatlth: 6225
+requirements:[
+  lead/2500
+  silicon/1500
+  titanium/2500
+  thorium/1000
+  plastanium/700
+  phase-fabric/850
+  Iron/1500
+  Gold/1000
+]
+category: units
+size: 7
+consumes: {
+  power: 20
+  items: {
+    items: [
+      silicon/1000
+      Sodium_Battery/1000
+      Iron/750
+      Gold/500
+    ]
+  }
+  liquid: slag/3
+}
+upgrades: [
+  [Destructor_Fortress,Destructor_Scepter],
+  [Destructor_Spiroct,Destructor_Arkyid],
+  [Destructor_Quasar,Destructor_Vela],
+  [Destructor_Zenith,Destructor_Antumbra],
+  [Destructor_Mega,Destructor_Quad],
+  [Destructor_Bryde,Destructor_Sei]
+  [Destructor_Cyerce,Destructor_Aegires]
+]
+constructTime: 5400
+liquidCapacity: 180
+research: Destructor_Multiplicative_Reconstructor

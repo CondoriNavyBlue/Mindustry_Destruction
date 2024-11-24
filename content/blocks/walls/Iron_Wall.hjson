@@ -1,0 +1,12 @@
+name: Iron Wall
+type: Wall
+health: 900
+size: 1
+absorbLasers: true
+chanceDeflect: 5
+buildCostMultiplier: 5
+category: defense
+requirements: [
+    Iron/8
+]
+research: surge-wall

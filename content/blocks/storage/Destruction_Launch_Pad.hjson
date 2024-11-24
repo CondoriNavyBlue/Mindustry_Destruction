@@ -1,0 +1,20 @@
+type: LaunchPad
+health: 1000
+launchTime: 600
+size: 3
+itemCapacity: 200
+hasPower: true
+consumes: {
+    power: 9
+}
+lightColor: ed655a
+requirements: [
+    copper/600
+    lead/500
+    silicon/350
+    thorium/250
+    Iron/300
+    Gold/100
+]
+category: effect
+research: launch-pad

@@ -1,0 +1,5 @@
+type: OreBlock
+itemDrop: Gold
+playerUnmineable: true
+oreDefault: true
+variants: 3

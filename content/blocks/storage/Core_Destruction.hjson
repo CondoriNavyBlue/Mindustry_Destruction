@@ -1,0 +1,20 @@
+type: CoreBlock
+name: Core Destruction
+unitType: Destructor_Gamma
+health: 12000
+itemCapacity: 20000
+size: 6
+thrusterLength: 10
+unitCapModifier: 32
+researchCostMultiplier: 0.125
+requirements:[
+  copper/8000
+  lead/8000
+  silicon/5000
+  thorium/4000
+  Iron/5000
+  Gold/4000
+  Diamond/2000
+]
+category: effect
+research: core-nucleus

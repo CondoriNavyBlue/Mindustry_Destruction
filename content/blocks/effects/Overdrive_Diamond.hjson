@@ -1,0 +1,31 @@
+type: OverdriveProjector
+name: Overdrive Diamond
+requirements: [
+  lead/10000
+  titanium/10000
+  silicon/10000
+  Sodium_Battery/10000
+  Diamond/6600
+]
+useTime: 300
+itemCapacity: 100
+size: 3
+speedBoost: 2
+range: 3394.1125496954282
+speedBoostPhase: 2
+health: 10000
+baseColor: 00ffff
+phaseColor: 80c8ff
+consumes: {
+  power: 100
+  items: {
+    items: [
+      phase-fabric/10
+      Diamond/10
+    ]
+    booster: true
+    optional: true
+  }
+}
+category: effect
+research: overdrive-dome

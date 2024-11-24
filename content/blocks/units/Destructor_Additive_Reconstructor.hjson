@@ -1,0 +1,32 @@
+type: Reconstructor
+name: Destructor Additive Reconstructor
+heatlth: 2800
+requirements:[
+  copper/500
+  lead/600
+  silicon/600
+  Iron/500
+]
+category: units
+size: 3
+consumes: {
+  power: 10
+  items: {
+    items: [
+      silicon/60
+      Sodium_Battery/60
+      Iron/40
+    ]
+  }
+}
+upgrades: [
+  [Destructor_Dagger,Destructor_Mace]
+  [Destructor_Crawler,Destructor_Atrax]
+  [Destructor_Nova,Destructor_Pulsar]
+  [Destructor_Flare,Destructor_Horizon]
+  [Miner_Mono,Builder_Poly]
+  [Destructor_Risso,Destructor_Minke]
+  [Destructor_Retusa,Destructor_Oxynoe]
+]
+constructTime: 600
+research: additive-reconstructor

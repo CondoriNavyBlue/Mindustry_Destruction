@@ -1,0 +1,10 @@
+type: StorageBlock
+name: Destruction Container
+health: 1750
+itemCapacity: 900
+size: 2
+requirements:[
+  Iron/200
+]
+category: effect
+research: container

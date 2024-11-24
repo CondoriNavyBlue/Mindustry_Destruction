@@ -1,0 +1,26 @@
+//type: Separator
+name: Sand_Sieve_Machine
+localizedName: Sand Sieve Machine
+size: 3
+hasPower: true
+hasItems: true
+itemCapacity: 30
+craftTime: 30
+buildCostMultiplier: 0.19815059445178335
+requirements: [
+  copper/200
+  lead/200
+  graphite/50
+  phase-fabric/50
+]
+consumes: {
+  power: 2
+  items: {
+    items: [
+      sand/10
+    ]
+  }
+  liquid: water/0.1
+}
+category: crafting
+research: kiln

@@ -1,0 +1,11 @@
+type: StorageBlock
+name: Destruction Vault
+health: 3938
+itemCapacity: 2500
+size: 3
+requirements:[
+  Iron/250
+  Gold/500
+]
+category: effect
+research: Destruction_Container

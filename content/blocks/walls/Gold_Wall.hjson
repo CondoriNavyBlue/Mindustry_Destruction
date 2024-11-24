@@ -1,0 +1,11 @@
+name: Gold Wall
+type: Wall
+health: 1250
+size: 1
+absorbLasers: true
+buildCostMultiplier: 5
+category: defense
+requirements: [
+    Gold/8
+]
+research: Iron_Wall
