@@ -1,0 +1,33 @@
+type: naval
+localizedName: Destructor Navanax
+name: Destructor_Navanax
+health: 85000
+speed: 0.675
+drag: 0.17
+hitSize: 58
+armor: 20
+accel: 0.2
+rotateSpeed: 1.25
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+faceTarget: false
+trailLength: 70
+waveTrailX: 23
+waveTrailY: -32
+trailScl: 3.5
+research: {
+  parent: Destructor_Aegires
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: Coastal_Delta
+    }
+  ]
+}

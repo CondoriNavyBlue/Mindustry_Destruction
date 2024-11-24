@@ -1,0 +1,33 @@
+type: naval
+localizedName: Destructor Omura
+name: Destructor_Omura
+health: 88000
+speed: 0.6
+drag: 0.18
+hitSize: 58
+armor: 20
+accel: 0.19
+rotateSpeed: 1.1
+rotateShooting: false
+trailLength: 70
+waveTrailX: 23
+waveTrailY: -32
+trailScl: 3.5
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Sei
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: Sandy_Fjord
+    }
+  ]
+}

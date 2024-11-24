@@ -1,0 +1,112 @@
+type: legs
+localizedName: Destructor Spiroct
+name: Destructor_Spiroct
+speed: 0.6
+drag: 0.4
+hitSize: 15
+rotateSpeed: 3.4
+health: 5000
+immunities: [burning, melting]
+legCount: 6
+legLength: 13
+legForwardScl: 0.8
+legMoveSpace: 1.4
+legBaseOffset: 2
+hovering: true
+armor: 10
+shadowElevation: 0.3
+groundLayer: 75
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Spiroct_Weapon
+    shootY: 4
+    reload: 12.5
+    ejectEffect: none
+    recoil: 2
+    rotate: true
+    shootSound: sap
+    x: 8.5
+    y: -1.5
+    bullet: {
+      type: SapBulletType
+      sapStrength: 0.4
+      length: 80
+      damage: 50
+      shootEffect: shootSmall
+      hitColor: ed655a
+      color: ed655a
+      despawnEffect: none
+      width: 0.64
+      lifetime: 35
+      knockback: -1.24
+    }
+  }
+  {
+    name: Destructor_Mount_Purple_Weapon
+    reload: 12.5
+    ejectEffect: none
+    recoil: 2
+    rotate: true
+    shootSound: sap
+    x: 4
+    y: 3
+    bullet: {
+      type: SapBulletType
+      sapStrength: 0.4
+      length: 64
+      damage: 34
+      shootEffect: shootSmall
+      hitColor: ed655a
+      color: ed655a
+      despawnEffect: none
+      width: 0.55
+      lifetime: 25
+      knockback: -0.65
+    }
+  }
+  {
+    name: Destructor_Spiroct_Weapon
+    shootY: 4
+    mirror: false
+    reload: 60
+    ejectEffect: none
+    recoil: 0
+    rotate: true
+    shootSound: beam
+    x: 0
+    y: 0
+    continuous: true
+    bullet: {
+      type: ContinuousLaserBulletType
+      length: 100
+      damage: 7.5
+      hitEffect: hitMeltdown
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      drawSize: 8
+      width: 2.4
+      lifetime: 180
+      incendChance: 0.05
+      incendSpread: 5
+      incendAmount: 1
+      colors: [
+        ed655a66
+        ed655a
+        ffffff
+      ]
+    }
+  }
+]
+research: {
+  parent: Destructor_Atrax
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

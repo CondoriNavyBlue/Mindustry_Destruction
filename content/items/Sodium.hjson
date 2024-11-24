@@ -1,0 +1,8 @@
+name: Sodium
+color: 797979
+flammability: 1.33
+cost: 1
+hardness: 2
+research: {
+  parent: water
+}

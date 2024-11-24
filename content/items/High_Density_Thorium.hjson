@@ -1,0 +1,8 @@
+name: High Density Thorium
+color: f97fb7
+cost: 5
+radioactivity: 7.25
+explosiveness: 0.8
+research: {
+  parent: thorium
+}

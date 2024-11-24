@@ -1,0 +1,27 @@
+type: naval
+localizedName: Destructor Retusa
+name: Destructor_Retusa
+speed: 1.2
+targetAir: false
+drag: 0.14
+hitSize: 11
+health: 780
+accel: 0.4
+rotateSpeed:5.75
+trailLength: 20
+waveTrailX: 5
+trailScl: 1.3
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+faceTarget: false
+range: 100
+armor: 6
+research: {
+  parent: Destructor_Risso
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

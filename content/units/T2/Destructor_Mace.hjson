@@ -1,0 +1,19 @@
+type: mech
+localizedName: Destructor Mace
+name: Destructor_Mace
+speed: 0.575
+hitSize: 10
+health: 1610
+armor: 7.5
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Dagger
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

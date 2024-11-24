@@ -1,0 +1,89 @@
+type: mech
+localizedName: Destructor Scepter
+name: Destructor_Scepter
+speed : 0.45
+hitSize: 22
+rotateSpeed: 2.6
+health: 24000
+armor: 13
+mechFrontSway: 1
+mechStepParticles: true
+stepShake: 0.15
+singleTarget: true
+drownTimeMultiplier: 4
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Scepter_Weapon
+    top: false
+    x: 16
+    y:1
+    shootY: 8
+    reload: 45
+    recoil: 5
+    shake: 2
+    ejectEffect: casing3
+    shootSound: bang
+    shoot: {
+      shots: 5
+      shotDelay: 2
+    }
+    inaccuracy: 3
+    bullet: {
+      type: BasicBulletType
+      speed: 8
+      damage: 75
+      width: 11
+      height: 20
+      lifetime: 28
+      shootEffect: shootBig
+      lightning: 3
+      lightningLength: 6
+      lightningColor: f3e979
+      lightningDamage: 32
+    }
+  }
+  {
+    name: Destructor_Mount_Weapon
+    reload: 13
+    x: 8.5
+    y: 6
+    rotate: true
+    ejectEffect: casing1
+    bullet: {
+      type: BasicBulletType
+      damage: 24
+      speed: 4
+      width: 7
+      height: 9
+      lifetime: 60
+    }
+  }
+  {
+    name: Destructor_Mount_Weapon
+    reload: 16
+    x: 8.5
+    y: -7
+    rotate: true
+    ejectEffect: casing1
+    bullet: {
+      type: BasicBulletType
+      damage: 24
+      speed: 4
+      width: 7
+      height: 9
+      lifetime: 60
+    }
+  }
+]
+research: {
+  parent: Destructor_Fortress
+  requirements:[
+      silicon/80000
+      phase-fabric/50000
+      Sodium_Battery/75000
+      Iron/33000
+      Gold/33000
+      Diamond/7500
+  ]
+}

@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Round_Highlands
+localizedName: Round Highlands
+planet: serpulo
+sector: 151
+captureWave: 30
+difficulty: 15

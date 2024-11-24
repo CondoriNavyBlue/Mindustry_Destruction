@@ -1,0 +1,64 @@
+type: mech
+localizedName: Destructor Quasar
+name: Destructor_Quasar
+boostMultiplier: 2
+health: 4550
+canBoost: true
+armor: 10
+mechLandShake: 2
+riseSpeed: 0.05
+commandLimit: 10
+mechFrontSway: 0.55
+speed: 0.45
+hitSize: 13
+drawShields: false
+engineColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Beam_Weapon
+    top: false
+    shake: 2
+    shootY: 4
+    x: 6.5
+    reload: 40
+    recoil: 4
+    shootSound: laser
+    shoot: {
+      shots: 3
+      shotDelay: 1.25
+    }
+    bullet: {
+      type: LaserBulletType
+      length: 180
+      lightningColor: ff0000
+      lightColor: ff0000
+      lightningLength: 2
+      lightningDamage: 64
+      lightningAngleRand: 40
+      lightningLengthRand: 5
+      lightningSpacing: 35
+      damage: 150
+      recoil: 0.33
+      sideAngle: 45
+      sideWidth: 1
+      sideLength: 70
+      colors: [
+        ff000066
+        ff0000
+        ffffff
+      ]
+    }
+  }
+]
+research: {
+  parent: Destructor_Pulsar
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

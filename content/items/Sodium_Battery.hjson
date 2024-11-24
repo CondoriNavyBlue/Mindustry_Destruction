@@ -1,0 +1,7 @@
+name: Sodium Battery
+color: aaaaaa
+charge: 3
+cost: 1
+research: {
+  parent: Sodium
+}

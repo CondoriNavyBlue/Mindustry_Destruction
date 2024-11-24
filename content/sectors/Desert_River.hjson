@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Desert_River
+localizedName: Desert River
+planet: serpulo
+sector: 156
+captureWave: 50
+difficulty: 15

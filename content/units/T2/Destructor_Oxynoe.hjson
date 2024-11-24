@@ -1,0 +1,27 @@
+type: naval
+localizedName: Destructor Oxynoe
+name: Destructor_Oxynoe
+health: 2930
+speed: 1
+drag: 0.14
+hitSize: 14
+armor: 9
+accel: 0.4
+rotateSpeed: 5
+faceTarget: false
+trailLength: 22
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+waveTrailX: 5.5
+waveTrailY: -4
+trailScl: 1.9
+research: {
+  parent: Destructor_Retusa
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

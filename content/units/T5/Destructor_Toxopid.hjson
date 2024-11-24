@@ -1,0 +1,244 @@
+type: legs
+localizedName: Destructor Toxopid
+name: Destructor_Toxopid
+drag: 0.1
+speed: 0.55
+hitSize: 26
+health: 88000
+armor: 30
+lightRadius: 140
+rotateSpeed: 2.1
+drownTimeMultiplier: 3
+legCount: 8
+legMoveSpace: 0.8
+legPairOffset: 3
+legLength: 75
+legExtension: -20
+legBaseOffset: 8
+stepShake: 1
+legLengthScl: 0.93
+rippleScale: 3
+legSpeed: 0.19
+legSplashDamage: 120
+legSplashRange: 68
+hovering: true
+shadowElevation: 0.95
+groundLayer: 75
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    shootSound: shockBlast
+    x: 0
+    y: 0
+    shootY: 9.5
+    reload: 80
+    mirror: false
+    rotate: false
+    shoot: {
+      type: ShootSpread
+      shots: 13
+      spread: 4
+      shotDelay: 1
+    }
+    shake: 1
+    bullet: {
+      type: BasicBulletType
+      shootEffect: [
+        shootTitan
+        {
+          type: WaveEffect
+          colorTo: 6d56bf
+          sizeTo: 26
+          lifetime: 14
+          strokeFrom: 4
+        }
+      ]
+      smokeEffect: shootSmokeTitan
+      hitColor: bf92f9
+      despawnSound: spark
+      sprite: large-orb
+      trailEffect: missileTrail
+      trailInterval: 3
+      trailParam: 4
+      speed: 5
+      damage: 220
+      splashDamage: 160
+      splashDamageRadius: 40
+      lifetime: 40
+      width: 15
+      height: 15
+      backColor: 6d56bf
+      frontColor: bf92f9
+      shrinkX: 0
+      shrinkY: 0
+      trailColor: 6d56bf
+      trailLength: 12
+      trailWidth: 2.2
+      despawnEffect: {
+        type: ExplosionEffect
+        waveColor: bf92f9
+        smokeColor: 6c6c6c
+        sparkColor: 665c9f
+        waveStroke: 4
+        waveRad: 40
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveColor: bf92f9
+        smokeColor: 6c6c6c
+        sparkColor: 665c9f
+        waveStroke: 4
+        waveRad: 40
+      }
+      intervalBullet: {
+        type: LightningBulletType
+        damage: 80
+        ammoMultiplier: 1
+        lightningColor: bf92f9
+        lightningLength: 3
+        lightningLengthRand: 6
+        lightningType: {
+          type: BulletType
+          lifetime: 10
+          hitEffect: hitLancer
+          despawnEffect: none
+          status: shocked
+          statusDuration: 10
+          hittable: false
+          lightColor: ffffff
+        }
+      }
+      ulletInterval: 4
+      lightningColor: bf92f9
+      lightningDamage: 80
+      lightning: 8
+      lightningLength: 2
+      lightningLengthRand: 8
+    }
+  }
+  {
+    name: Destructor_Large_Purple_Mount
+    x: 11
+    y: -5
+    shootY: 7
+    reload: 24
+    shake: 4
+    rotateSpeed: 2.2
+    ejectEffect: casing1
+    shootSound: shootBig
+    rotate: true
+    shadow: 12
+    recoil: 3
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 10
+    }
+    bullet: {
+      type: ShrapnelBulletType
+      length: 120
+      damage: 300
+      width: 25
+      serrationLenScl: 7
+      serrationSpaceOffset: 60
+      serrationFadeOffset: 0
+      serrations: 10
+      serrationWidth: 6
+      fromColor: ff0000
+      toColor: ffc0c0
+      shootEffect: sparkShoot
+      smokeEffect: sparkShoot
+    }
+  }
+  {
+    name: Destructor_Toxopid_Cannon
+    x: 0
+    y: -14
+    shootY: 22
+    mirror: false
+    reload: 200
+    shake: 10
+    recoil: 10
+    rotateSpeed: 1.5
+    ejectEffect: casing3
+    shootSound: artillery
+    rotate: true
+    shadow: 30
+    shoot: {
+      shots: 3
+      shotDelay: 10
+    }
+    rotationLimit: 80
+    bullet: {
+      type: ArtilleryBulletType
+      speed: 4
+      damage: 200
+      hitEffect: sapExplosion
+      knockback: 1
+      lifetime: 120
+      width: 25
+      height: 25
+      ammoMultiplier: 4
+      splashDamageRadius: 100
+      splashDamage: 180
+      backColor: 6d56bf
+      frontColor: bf92f9
+      lightningColor: bf92f9
+      lightning: 5
+      lightningLength: 20
+      lightningDamage: 80
+      lightRadius: 40
+      lightColor: 665c9f
+      lightOpacity: 0.6
+      smokeEffect: shootBigSmoke2
+      hitShake: 10
+      status: sapped
+      statusDuration: 600
+      fragLifeMin: 0.2
+      fragBullets: 9
+      fragBullet: {
+        type: ArtilleryBulletType
+        speed: 2.5
+        damage: 80
+        hitEffect: sapExplosion
+        knockback: 0.8
+        lifetime: 75
+        width: 20
+        height: 20
+        collidesTiles: false
+        splashDamage: 100
+        splashDamageRadius: 80
+        lightningDamage: 66
+        backColor: 6d56bf
+        frontColor: bf92f9
+        lightningColor: bf92f9
+        lightning: 2
+        lightningLength: 5
+        lightRadius: 30
+        lightColor: 665c9f
+        lightOpacity: 0.5
+        smokeEffect: shootBigSmoke2
+        hitShake: 5
+        status: sapped
+        statusDuration: 600
+      }
+    }
+  }
+]
+research: {
+  parent: Destructor_Arkyid
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: Spore_Basin
+    }
+  ]
+}

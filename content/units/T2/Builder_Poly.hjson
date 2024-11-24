@@ -1,0 +1,29 @@
+type: flying
+localizedName: Builder Poly
+name: Builder_Poly
+flying: true
+drag: 0.05
+speed: 3
+rotateSpeed: 15
+accel: 0.1
+range: 150
+health:2000
+buildSpeed: 1.5
+engineOffset: 6.5
+hitSize: 9
+lowAltitude: true
+engineColor: ed655a
+trailLength: 9
+trailColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Miner_Mono
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

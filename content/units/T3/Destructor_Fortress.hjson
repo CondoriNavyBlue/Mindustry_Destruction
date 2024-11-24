@@ -1,0 +1,88 @@
+type: mech
+localizedName: Destructor Fortress
+name: Destructor_Fortress
+speed: 0.5
+hitSize: 13
+rotateSpeed: 3.5
+targetAir: false
+health: 4150
+armor: 10
+mechFrontSway: 0.55
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Artillery
+    top: false
+    y: 1
+    x: 9
+    reload: 50
+    rocoil: 4
+    shake: 2
+    ejectEffect: casing2
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      speed: 2
+      damage: 20
+      sprite: shell
+      hitEffect: blastExplosion
+      knockback: 0.8
+      lifetime: 120
+      width: 16
+      height: 16
+      collides: true
+      collidesTiles: true
+      splashDamage: 80
+      splashDamageRadius: 40
+      backColor: f9c27a
+      frontColor: fff8e8
+      fragBullets: 1
+      fragBullet: {
+        type: ArtilleryBulletType
+        speed: 0
+        damage: 20
+        sprite: shell
+        hitEffect: blastExplosion
+        knockback: 0.8
+        lifetime: 10
+        width: 16
+        height: 16
+        collides: false
+        collidesTiles: false
+        splashDamage: 80
+        splashDamageRadius: 40
+        backColor: f9c27a
+        frontColor: fff8e8
+        fragBullets: 1
+        fragBullet: {
+          type: ArtilleryBulletType
+          speed: 0
+          damage: 20
+          sprite: shell
+          hitEffect: blastExplosion
+          knockback: 0.8
+          lifetime: 10
+          width: 16
+          height: 16
+          collides: false
+          collidesTiles: false
+          splashDamage: 80
+          splashDamageRadius: 40
+          backColor: f9c27a
+          frontColor: fff8e8
+        }
+      }
+    }
+  }
+]
+research: {
+  parent: Destructor_Mace
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

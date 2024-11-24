@@ -1,0 +1,56 @@
+type: legs
+localizedName: Destructor Atrax
+name: Destructor_Atrax
+speed: 0.7
+hitSize: 13
+drag: 0.4
+rotateSpeed: 3.5
+targetAir: false
+health: 1550
+legCount: 4
+legLength: 9
+legForwardScl: 0.6
+legMoveSpace: 1.4
+hovering: true
+armor: 6.75
+shadowElevation: 0.2
+groundLayer: 74
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Atrax_Weapon
+    top: false
+    shootY: 3
+    reload: 10
+    ejectEffect: none
+    recoil: 1
+    x: 7
+    shootSound: flame
+    inaccuracy: 5
+    shoot:{
+      shots: 8
+    }
+    velocityRnd: 0.33
+    bullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 16
+      speed: 4
+      drag: 0.009
+      shootEffect: shootSmall
+      lifetime: 60
+      collidesAir: false
+    }
+  }
+]
+research: {
+  parent: Destructor_Crawler
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

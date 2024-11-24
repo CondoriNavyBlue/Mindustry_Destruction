@@ -1,0 +1,105 @@
+type: naval
+localizedName: Destructor Sei
+name: Destructor_Sei
+health: 22000
+armor: 13
+speed: 0.815
+drag: 0.17
+hitSize: 39
+accel: 0.2
+rotateSpeed: 1.5
+rotateShooting: false
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+trailLength: 50
+waveTrailX: 18
+waveTrailY:-21
+trailScl: 3
+weapons: [
+  {
+    name: Destructor_Sei_Launcher
+    x: 0
+    y: 0
+    rotate: true
+    rotateSpeed: 5
+    mirror: false
+    shadow: 20
+    shootY: 4.5
+    recoil: 4
+    reload: 36
+    shoot: {
+      type: ShootAlternate
+      shots: 6
+      shotDelay: 1.5
+      spread: 4
+      barrels: 3
+    }
+    velocityRnd: 0.4
+    inaccuracy: 7
+    ejectEffect: none
+    shake: 1
+    shootSound: missile
+    bullet: {
+      type: MissileBulletType
+      homingPower: 0.12
+      damage: 64
+      speed: 5
+      width: 8
+      height: 8
+      shrinkX: 0
+      shrinkY: 0
+      drag: -0.003
+      homingRange: 80
+      keepBelocity: false
+      splashDamage: 80
+      splashDamageRadius: 40
+      lifetime: 72
+      trailColor: f9c27a
+      backColor: f9c27a
+      frontColor: fff8e8
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      weaveScale: 8
+      weaveMag: 2
+    }
+  }
+  {
+    name: Destructor_Large_Bullet_Mount
+    reload: 60
+    cooldownTime: 90
+    x: 17.5
+    y: -16.5
+    rotateSpeed: 5
+    rotate: true
+    shootY: 7
+    shake: 2
+    recoil: 3
+    shadow: 12
+    ejectEffect: casing3
+    shootSound: shootBig
+    shoot: {
+      shots: 3
+      shotDelay: 4
+    }
+    inaccuracy: 1
+    bullet: {
+      type: BasicBulletType
+      speed: 8
+      damage: 96
+      width: 13
+      height: 20
+      shootEffect: shootBig
+      lifetime: 40
+    }
+  }
+]
+research: {
+  parent: Destructor_Bryde
+  requirements:[
+      silicon/80000
+      phase-fabric/50000
+      Sodium_Battery/75000
+      Iron/33000
+      Gold/33000
+      Diamond/7500
+  ]
+}

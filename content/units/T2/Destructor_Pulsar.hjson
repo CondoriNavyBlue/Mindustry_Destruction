@@ -1,0 +1,23 @@
+type: mech
+localizedName: Destructor Pulsar
+name: Destructor_Pulsar
+health: 1660
+canBoost: true
+boostMultiplier: 1.6
+speed: 0.85
+hitSize: 11
+armor: 7
+riseSpeed: 0.07
+engineColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Nova
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

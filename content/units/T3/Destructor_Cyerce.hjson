@@ -1,0 +1,27 @@
+type: naval
+localizedName: Destructor Cyerce
+name: Destructor_Cyerce
+health: 5500
+speed: 1
+accel: 0.22
+rotateSpeed: 2.8
+drag: 0.16
+hitSize: 20
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+armor: 10
+faceTarget: false
+trailLength: 23
+waveTrailX: 9
+waveTrailY: -9
+trailScl: 2
+research: {
+  parent: Destructor_Oxynoe
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

@@ -1,0 +1,62 @@
+type: flying
+localizedName: Destructor Horizon
+name: Destructor_Horizon
+health: 1420
+speed: 1.75
+accel: 0.08
+drag: 0.016
+flying: true
+hitSize: 10
+targetAir: false
+engineOffset: 7.8
+range: 140
+faceTarget: false
+armor: 6
+targetFlags: [factory, null]
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+itemCapacity: 0
+circleTarget: true
+engineColor: ed655a
+trailLength: 12
+trailColor: ed655a
+weapons: [
+  {
+    minShootVelocity: 0.75
+    x: 3
+    shootY: 0
+    reload: 4.5
+    shootCone: 180
+    ejectEffect: none
+    inaccuracy: 15
+    ignoreRotation: true
+    shootSound: none
+    bullet: {
+      type: BombBulletType
+      sprite: circle-bullet
+      splashDamage: 28
+      splashDamageRadius: 28
+      width: 10
+      height: 10
+      shrinkX: 0.5
+      shrinkY: 0.5
+      backColor: ed655a
+      frontColor: ffffff
+      hitEffect: flakExplosion
+      shootEffect: none
+      smokeEffect: none
+      status: blasted
+      statusDuration: 60
+    }
+  }
+]
+research: {
+  parent: Destructor_Flare
+  requirements:[
+      silicon/25000
+      phase-fabric/15000
+      Sodium_Battery/20000
+      Iron/10000
+      Gold/10000
+      Diamond/3000
+  ]
+}

@@ -1,0 +1,52 @@
+type: flying
+name: Destructor_Disrupt
+localizedName: Destructor Disrupt
+research: disrupt
+envDisabled: 0
+lowAltitude: false
+flying: true
+drag: 0.07
+speed: 1
+rotateSpeed: 2
+accel: 0.1
+health: 62000
+armor: 9
+hitSize: 46
+payloadCapacity: 3800
+engineSize: 6
+engineOffset: 25.25
+engineColor: fff340
+alwaysUnlocked: true
+fogRadius: 43.5
+targetAir: false
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+engines:[
+  {
+    type: UnitEngine
+    x: 23.75
+    y: -14
+    radius: 5
+    rotation: 330
+  }
+  {
+    type: UnitEngine
+    x: 22.25
+    y: -23.75
+    radius: 4
+    rotation: 315
+  }
+  {
+    type: UnitEngine
+    x: -23.75
+    y: -14
+    radius: 5
+    rotation: 330
+  }
+  {
+    type: UnitEngine
+    x: -22.25
+    y: -23.75
+    radius: 4
+    rotation: 315
+  }
+]

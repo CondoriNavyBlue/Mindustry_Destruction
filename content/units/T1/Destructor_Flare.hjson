@@ -1,0 +1,48 @@
+type: flying
+localizedName: Destructor Flare
+name: Destructor_Flare
+speed: 3.4
+accel: 0.08
+drag: 0.04
+flying: true
+health: 500
+targetFlags: [generator, null]
+itemCapacity: 15
+engineOffset: 5.75
+armor: 3
+hitSize: 9
+itemCapacity: 10
+engineColor: ed655a
+trailLength: 8
+trailColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    y: 0
+    x: 2
+    reload: 8
+    ejectEffect: casing1
+    shootSound: pew
+    bullet: {
+      type: BasicBulletType
+      speed: 4
+      damage: 22
+      width: 7
+      height: 9
+      lifetime: 45
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+      ammoMultiplier: 2
+    }
+  }
+]
+research: {
+  parent: air-factory
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

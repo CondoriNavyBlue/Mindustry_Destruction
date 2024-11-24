@@ -1,0 +1,32 @@
+type: payload
+localizedName: Destructor Mega
+name: Destructor_Mega
+health: 5000
+armor: 11
+speed: 3.1
+accel: 0.06
+drag: 0.017
+lowAltitude: true
+flying: true
+engineOffset: 10.5
+faceTarget: false
+hitSize: 16.05
+engineSize: 3
+engineColor: ed655a
+payloadCapacity: 500
+isEnemy: false
+trailLength: 8
+trailColor: ed655a
+targetFlags: [launchPad, storage, battery, null]
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Builder_Poly
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

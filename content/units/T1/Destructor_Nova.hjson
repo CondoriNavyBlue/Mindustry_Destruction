@@ -1,0 +1,21 @@
+type: mech
+localizedName: Destructor Nova
+name: Destructor_Nova
+canBoost: true
+boostMultiplier: 1.5
+speed: 0.55
+hitSize: 8
+health: 800
+armor: 4
+engineColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Dagger
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

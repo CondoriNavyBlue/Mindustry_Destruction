@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Spore_Basin
+localizedName: Spore Basin
+planet: serpulo
+sector: 177
+captureWave: 40
+difficulty: 15

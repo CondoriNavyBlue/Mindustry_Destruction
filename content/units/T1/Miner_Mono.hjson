@@ -1,0 +1,29 @@
+type: flying
+localizedName: Miner Mono
+name: Miner_Mono
+flying: true
+drag: 0.06
+accel: 0.12
+speed: 2.25
+health: 500
+engineSize: 1.8
+engineOffset: 5.7
+range: 50
+hitSize: 8
+isEnemy: false
+mineTier: 1
+mineSpeed: 5
+engineColor: ed655a
+trailLength: 8
+trailColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Flare
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

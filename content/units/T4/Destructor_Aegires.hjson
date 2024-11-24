@@ -1,0 +1,63 @@
+type: naval
+localizedName: Destructor Aegires
+name: Destructor_Aegires
+health: 24000
+armor: 13
+speed: 1
+drag: 0.17
+hitSize: 44
+accel: 0.2
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+rotateSpeed: 1.55
+faceTarget: false
+ammoCapacity: 40
+clipSize: 250
+trailLength: 50
+waveTrailX: 18
+waveTrailY: -17
+trailScl: 3.2
+weapons: [
+  {
+    type: PointDefenseWeapon
+    name: Destructor_Point_Defense_Mount
+    x: 12.5
+    y: -18
+    reload: 6
+    targetInterval: 8
+    targetSwitchInterval: 8
+    bullet: {
+      type: BulletType
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 180
+      damage: 60
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    name: Destructor_Point_Defense_Mount
+    x: 12.5
+    y: 14
+    reload: 6
+    targetInterval: 8
+    targetSwitchInterval: 8
+    bullet: {
+      type: BulletType
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 180
+      damage: 60
+    }
+  }
+]
+research: {
+  parent: Destructor_Cyerce
+  requirements:[
+      silicon/80000
+      phase-fabric/50000
+      Sodium_Battery/75000
+      Iron/33000
+      Gold/33000
+      Diamond/7500
+  ]
+}

@@ -1,0 +1,687 @@
+type: tank
+name: Destructor_Conquer
+localizedName: Destructor Conquer
+research: conquer
+hitSize: 46
+treadPullOffset: 1
+speed: 0.6
+health: 72000
+armor: 32
+crushDamage: 8
+rotateSpeed: 1.25
+alwaysUnlocked: true
+fogRadius: 43.5
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+treadRects: [
+    {
+        type: Rect
+        x: -88.5
+        y: 36.5
+        width: 56
+        height: 73
+    }
+    {
+        type: Rect
+        x: -91.5
+        y: -73.5
+        width: 29
+        height: 17
+    }
+    {
+        type: Rect
+        x: -56.5
+        y: -106.5
+        width: 39
+        height: 19
+    }
+]
+parts: [
+    {
+        type: RegionPart
+        suffix: -glow
+        color: 79f7f2
+        blending: additive
+        layer: -1
+        outline: false
+    }
+]
+weapons: [
+    {
+        name: Destructor_Conquer_Weapon
+        shootSound: largeCannon
+        layerOffset: 0.1
+        reload: 100
+        shootY: 32.5
+        shake: 5
+        recoil: 5
+        rotate: true
+        rotateSpeed: 1
+        mirror: false
+        x: 0
+        y: -2
+        shadow: 50
+        heatColor: 79f7f2
+        shootWarmupSpeed: 0.06
+        cooldownTime: 110
+        minWarmup: 0.9
+        parts: [
+            {
+                type: RegionPart
+                suffix: -glow
+                color: 79f7f2
+                blending: additive
+                outline: false
+                mirror: false
+            }
+            {
+                type: RegionPart
+                suffix: -sides
+                progress: warmup
+                mirror: true
+                under: true
+                moveX: 0.75
+                moveY: 0.75
+                moveRot: 82
+                x: 9.25
+                y:2
+            }
+            {
+                type: RegionPart
+                suffix: -sinks
+                progress: warmup
+                mirror: true
+                under: true
+                heatColor: 79f7f2
+                moveX: 4.25
+                moveY: -3.75
+                x: 8
+                y: -8.5
+            }
+            {
+                type: RegionPart
+                suffix: -sinks-heat
+                progress: warmup
+                mirror: true
+                outline: false
+                colorTo: 79f7f280
+                color: 79f7f200
+                moveX: 4.25
+                moveY: -3.75
+                x: 8
+                y: -8.5
+            }
+            {
+                type: RegionPart
+                suffix: -blade
+                progress: {
+                    type: warmup
+                    delay: 0.6
+                    blend: {
+                        other: reload
+                        amount: 0.3
+                    }
+                }
+                heatProgress: {
+                    type: heat
+                    add: 0.3
+                    min: warmup
+                }
+                heatColor: 79f7f2
+                mirror: true
+                under: true
+                moveRot: -40
+                moveX: 3
+                layerOffset: -0.002
+                x: 2.75
+            }
+            {
+                type: RegionPart
+                suffix: -blade
+                progress: warmup
+                heatProgress: heat
+                heatColor: 79f7f2
+                mirror: true
+                under: true
+                moveRot: -80
+                moveX: 3
+                layerOffset: -0.002
+                x: 2.75
+            }
+            {
+                type: RegionPart
+                suffix: -blade
+                progress: warmup
+                heatProgress: heat
+                heatColor: 79f7f2
+                mirror: true
+                under: true
+                moveRot: -120
+                moveX: 3
+                layerOffset: -0.002
+                x: 2.75
+            }
+        ]
+        bullet: {
+            type: BasicBulletType
+            speed: 16
+            damage: 2660
+            sprite: missile-large
+            width: 14
+            height: 22
+            lifetime: 20
+            hitSize: 8
+            smokeEffect: shootSmokeTitan
+            pierceCap: 5
+            pierce: true
+            pierceBuilding: true
+            hitColor: 79f7f2
+            backColor: 79f7f2
+            trailColor: 79f7f2
+            frontColor: ffffff
+            trailWidth: 6
+            trailLength: 9
+            hitEffect: massiveExplosion
+            despawnEffect: massiveExplosion
+            splashDamage: 330
+            splashDamageRadius: 48
+            shootEffect: {
+                type: ExplosionEffect
+                lifetime: 40
+                waveStroke: 4
+                waveColor: 79f7f2
+                sparkColor: 79f7f2
+                waveRad: 15
+                smokeSize: 5
+                smokes: 8
+                smokeSizeBase: 0
+                smokeColor: 79f7f2
+                sparks: 8
+                sparkRad: 40
+                sparkLen: 4
+                sparkStroke: 3
+            }
+            spawnBullets: [
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 2.6
+lifetime: 37.87671232876712
+weaveScale: 2.5
+weaveMag: 3.5666666666666664
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 2.6
+lifetime: 37.87671232876712
+weaveScale: 2.5
+weaveMag: -3.5666666666666664
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 4.6
+lifetime: 33.915662650602414
+weaveScale: 2.916666666666667
+weaveMag: 3.2333333333333334
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 4.6
+lifetime: 33.915662650602414
+weaveScale: 2.916666666666667
+weaveMag: -3.2333333333333334
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 6.6000000000000005
+lifetime: 30.806451612903224
+weaveScale: 3.3333333333333335
+weaveMag: 2.9
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 6.6000000000000005
+lifetime: 30.806451612903224
+weaveScale: 3.3333333333333335
+weaveMag: -2.9
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 8.6
+lifetime: 28.300970873786405
+weaveScale: 3.75
+weaveMag: 2.5666666666666664
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 8.6
+lifetime: 28.300970873786405
+weaveScale: 3.75
+weaveMag: -2.5666666666666664
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 10.600000000000001
+lifetime: 26.238938053097346
+weaveScale: 4.166666666666667
+weaveMag: 2.2333333333333334
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 10.600000000000001
+lifetime: 26.238938053097346
+weaveScale: 4.166666666666667
+weaveMag: -2.2333333333333334
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 12.600000000000001
+lifetime: 24.512195121951223
+weaveScale: 4.583333333333334
+weaveMag: 1.9
+                }
+                {
+                    type: BasicBulletType
+                    damage: 100
+                    drag: 0.002
+                    width: 14
+                    height: 13
+                    weaveRandom: false
+                    hitSize: 6
+                    pierceCap: 3
+                    pierce: true
+                    pierceBuilding: true
+                    hitColor: 79f7f2
+                    backColor: 79f7f2
+                    trailColor: 79f7f2
+                    frontColor: ffffff
+                    trailWidth: 3
+                    trailLength: 7
+                    splashDamage: 80
+                    splashDamageRadius: 40
+                    despawnEffect: {
+                        type: ExplosionEffect
+                        lifetime: 50
+                        waveStroke: 4
+                        waveColor: 79f7f2
+                        sparkColor: 79f7f2
+                        waveRad: 30
+                        smokeSize: 7
+                        smokes: 6
+                        smokeSizeBase: 0
+                        smokeColor: 79f7f2
+                        sparks: 5
+                        sparkRad: 30
+                        sparkLen: 3
+                        sparkStroke: 1.5
+                    }
+                    speed: 12.600000000000001
+lifetime: 24.512195121951223
+weaveScale: 4.583333333333334
+weaveMag: -1.9
+                }
+            ]
+        }
+    }
+]

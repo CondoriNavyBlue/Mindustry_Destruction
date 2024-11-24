@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Snow_Valley
+localizedName: Snow Valley
+planet: serpulo
+sector: 176
+captureWave: 30
+difficulty: 15

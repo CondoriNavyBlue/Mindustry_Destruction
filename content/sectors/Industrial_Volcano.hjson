@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Industrial_Volcano
+localizedName: Industrial Volcano
+planet: serpulo
+sector: 91
+captureWave: 49
+difficulty: 50

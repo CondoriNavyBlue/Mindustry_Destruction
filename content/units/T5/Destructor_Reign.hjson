@@ -1,0 +1,82 @@
+type: mech
+localizedName: Destructor Reign
+name: Destructor_Reign
+speed:0.39
+hitSize: 26
+rotateSpeed: 2
+health: 94000
+armor: 30
+mechStepParticles: true
+stepShake: 0.75
+drownTimeMultiplier: 6
+mechFrontSway: 1.9
+mechSideSway: 0.6
+drownTimeMultiplier: 6
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons:[
+  {
+    name: Destructor_Reign_Weapon
+    top: false
+    x: 21.5
+    y: 1
+    shootY: 11
+    reload: 12
+    recoil: 5
+    shake: 2
+    ejectEffect: casing4
+    shootSound: bang
+    shoot: {
+      shots: 3
+      shotDelay: 3.2
+    }
+    bullet: {
+      type: BasicBulletType
+      pierce: true
+      pierceCap: 10
+      width: 14
+      height: 33
+      speed: 13
+      damage: 240
+      lifetime: 20
+      shootEffect: shootBig
+      fragVelocityMin: 0.4
+      hitEffect: blastExplosion
+      splashDamage: 64
+      splashDamageRadius: 22
+      fragBullets: 3
+      fragLifeMin: 0
+      fragRandomSpread: 30
+      fragBullet: {
+        type: BasicBulletType
+        speed: 9
+        damage: 30
+        width: 10
+        height: 10
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 5
+        lifetime: 20
+        hitEffect: flakExplosion
+        splashDamage: 20
+        splashDamageRadius: 10
+      }
+    }
+  }
+]
+research: {
+  parent: Destructor_Scepter
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: Round_Highlands
+    }
+  ]
+}

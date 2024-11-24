@@ -1,0 +1,7 @@
+name: Gold
+color: FFFF00
+cost: 2
+hardness: 4
+research: {
+  parent: Iron
+}

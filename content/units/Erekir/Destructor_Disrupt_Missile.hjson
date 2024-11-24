@@ -1,0 +1,70 @@
+type: missile
+name: Destructor_Disrupt_Missile
+speed: 4.8
+maxRange: 5
+outlineColor: 2d2f39
+targetAir: false
+health: 500
+homingDelay: 10
+lowAltitude: true
+engineSize: 3
+engineColor: fff340
+trailColor: fff340
+engineLayer: 110
+deathExplosionEffect: none
+loopSoundVolume: 0.2
+fogRadius: 6
+parts: [
+    {
+        type: ShapePart
+        layer: 110
+        circle: true
+        y: -0.25
+        radius: 1.5
+        color: fff340
+        colorTo: ffffff
+        progress: life
+    }
+    {
+        type: RegionPart
+        suffix: -fin
+        mirror: true
+        progress: life
+        moveRot: 32
+        rotation: -6
+        moveY: 1.5
+        x: 0.75
+        y: -1.5
+    }
+]
+weapons: [
+    {
+        shootCone: 360
+        mirror: false
+        reload: 1
+        shootOnDeath: true
+        bullet: {
+            type: ExplosionBulletType
+            splashDamage: 277
+            splashDamageRadius: 58
+            suppressionRange: 140
+            shootEffect: {
+                type: ExplosionEffect
+                lifetime: 50
+                waveStroke: 5
+                waveLife: 8
+                waveColor: ffffff
+                sparkColor: fff340
+                smokeColor: fff340
+                waveRad: 40
+                smokeSize: 4
+                smokes: 7
+                smokeSizeBase: 0
+                sparks: 10
+                sparkRad: 40
+                sparkLen: 6
+                sparkStroke: 2
+            }
+        }
+    }
+]

@@ -1,0 +1,46 @@
+type: mech
+localizedName: Destructor Crawler
+name: Destructor_Crawler
+speed: 1.5
+hitSize: 8
+health: 500
+mechSideSway: 0.25
+range: 50
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    shootOnDeath: true
+    reload: 24
+    shootCone: 180
+    ejectEffect: none
+    shootSound: explosion
+    x: 0
+    shootY: 0
+    mirror: false
+    bullet: {
+      type: BulletType
+      collidesTiles: false
+      collides: false
+      hitSound: explosion
+      rangeOverride: 30
+      hitEffect: pulverize
+      speed: 0
+      splashDamageRadius: 80
+      instantDisappear: true
+      splashDamage: 390
+      killShooter: true
+      hittable: false
+      collidesAir: true
+    }
+  }
+]
+research: {
+  parent: Destructor_Dagger
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

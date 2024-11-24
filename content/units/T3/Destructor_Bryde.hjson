@@ -1,0 +1,129 @@
+type: naval
+localizedName: Destructor Bryde
+name: Destructor_Bryde
+health: 4500
+speed: 1
+accel: 0.2
+rotateSpeed: 1.8
+drag: 0.17
+hitSize: 20
+armor: 10
+faceTarget: false
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+trailLength: 22
+waveTrailX: 7
+waveTrailY: -9
+trailScl: 1.5
+weapons: [
+  {
+    name: Destructor_Large_Artillery
+    reload: 80
+    cooldownTime: 70
+    mirror: false
+    x: 0
+    y: -3.5
+    rotateSpeed: 1.7
+    rotate: true
+    shootY: 7
+    shake: 5
+    recoil: 4
+    shadow: 12
+    shootSound: railgun
+    ejectEffect: none
+    bullet: {
+      type: RailBulletType
+      shootEffect: railShoot
+      length: 300
+      pointEffectSpace: 40
+      pierceEffect: railHit
+      pointEffect: railTrail
+      hitEffect: massiveExplosion
+      smokeEffect: shootBig2
+      damage: 250
+      pierceDamageFactor: 0.33
+      rangeOverride: 280
+    }
+  }
+  {
+    reload: 80
+    cooldownTime: 70
+    mirror: false
+    x: 0
+    y: -3.5
+    rotateSpeed: 1.7
+    rotate: true
+    shootY: 7
+    shake: 5
+    recoil: 4
+    shadow: 0
+    shootSound: railgun
+    ejectEffect: none
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 45
+    }
+    bullet: {
+      type: RailBulletType
+      shootEffect: none
+      length: 60
+      pointEffectSpace: 40
+      pierceEffect: railHit
+      pointEffect: railTrail
+      hitEffect: massiveExplosion
+      smokeEffect: none
+      damage: 250
+      pierceDamageFactor: 0.33
+      rangeOverride: 280
+    }
+  }
+  {
+    name: Destructor_Missile_Mount
+    reload: 15
+    x: 8.5
+    y: -9
+    shadow: 6
+    rotateSpeed: 5
+    rotate: true
+    shoot: {
+      shots: 2
+      shotDelay: 3
+    }
+    inaccuracy: 5
+    velocityRnd: 0.1
+    shootSound: missile
+    ejectEffet: none
+    bullet: {
+      type: MissileBulletType
+      speed: 3
+      damage: 32
+      width: 8
+      height: 8
+      shrinkY: 0
+      drag: -0.003
+      homingRange: 60
+      keepVelocity: false
+      splashDamageRadius: 25
+      splashDamage: 24
+      lifetime: 80
+      trailColor: 7f7f7f
+      backColor: f9c27a
+      frontColor: fff8e8
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      waaveScale: 12
+      weaveMag: 3
+    }
+  }
+]
+research: {
+  parent: Destructor_Minke
+  requirements:[
+      silicon/50000
+      phase-fabric/30000
+      Sodium_Battery/50000
+      Iron/20000
+      Gold/20000
+      Diamond/5000
+  ]
+}

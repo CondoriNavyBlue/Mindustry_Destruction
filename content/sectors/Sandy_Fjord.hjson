@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Sandy_Fjord
+localizedName: Sandy Fjord
+planet: serpulo
+sector: 147
+captureWave: 50
+difficulty: 15

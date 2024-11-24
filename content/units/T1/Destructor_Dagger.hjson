@@ -1,0 +1,43 @@
+type: mech
+localizedName: Destructor Dagger
+name: Destructor_Dagger
+speed: 0.7
+hitSize: 8
+health: 600
+armor: 4
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Large_Weapon
+    top: false
+    reload: 15
+    x: 4
+    y: 2
+    ejectEffect: casing1
+    velocityRnd: 0.2
+    inaccuracy: 1.5
+    shoot: {
+      shots: 3
+    }
+    bullet: {
+      type: BasicBulletType
+      speed: 3.5
+      damage: 20
+      lifetime: 60
+      width: 7
+      height: 9
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+    }
+  }
+]
+research: {
+  parent: ground-factory
+  requirements:[
+      silicon/10000
+      phase-fabric/7500
+      Sodium_Battery/10000
+      Iron/5000
+      Gold/5000
+  ]
+}

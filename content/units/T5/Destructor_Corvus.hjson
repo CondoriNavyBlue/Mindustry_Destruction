@@ -1,0 +1,37 @@
+orvustype: legs
+localizedName: Destructor Corvus
+name: Destructor_Corvus
+hitSize: 29
+health: 80000
+armor: 20
+landShake: 1.5
+rotateSpeed: 2
+legCount: 4
+legLength: 14
+legBaseOffset: 11
+legMoveSpace: 1.5
+legForwardScl: 0.58
+hovering: true
+drownTimeMultiplier: 6
+shadowElevation: 0.2
+groundLayer: 75
+speed: 0.42
+drawShields: false
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Vela
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: Snow_Valley
+    }
+  ]
+}

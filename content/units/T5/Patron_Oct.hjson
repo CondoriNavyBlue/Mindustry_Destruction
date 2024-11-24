@@ -1,0 +1,35 @@
+type: payload
+localizedName: Patron Oct
+name: Patron_Oct
+armor: 50
+health: 120000
+speed: 0.9
+rotateSpeed: 1
+accel: 0.04
+drag: 0.018
+flying: true
+engineOffset: 46
+engineSize: 7.8
+faceTarget: false
+hitSize: 66
+payloadCapacity: 4096
+buildSpeed: 6
+drawShilds: false
+lowAltitude: true
+buildBeamOffset: 43
+ammoCapacity: 1
+engineColor: ed655a
+trailLength: 20
+trailColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+research: {
+  parent: Destructor_Quad
+  requirements:[
+      silicon/120000
+      phase-fabric/75000
+      Sodium_Battery/100000
+      Iron/50000
+      Gold/50000
+      Diamond/10000
+  ]
+}

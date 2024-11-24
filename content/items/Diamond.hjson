@@ -1,0 +1,7 @@
+name: Diamond
+color: 00FFFF
+cost: 3
+hardness: 5
+research: {
+  parent: Gold
+}

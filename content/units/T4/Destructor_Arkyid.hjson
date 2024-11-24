@@ -1,0 +1,144 @@
+type: legs
+localizedName: Destructor Arkyid
+name: Destructor_Arkyid
+drag: 0.1
+speed: 0.7
+hitSize: 23
+health: 22000
+armor: 13
+rotateSpeed: 3
+legCount: 6
+legMoveSpace: 1
+legPairOffset: 3
+legLength: 30
+legExtension: -15
+legBaseOffset: 10
+stepShake: 1
+legLengthScl: 0.96
+rippleScale: 2
+legSpeed: 0.2
+legSplashDamage: 50
+legSplashRange: 30
+drownTimeMultiplier: 2
+hovering: true
+shadowElevation: 0.65
+groundLayer: 75
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons:[
+  {
+    name: Destructor_Spiroct_Weapon
+    reload: 9
+    x: 4
+    y: 8
+    rotate: true
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      sapStrength: 1
+      length: 70
+      damage: 64
+      shootEffect: shootSmall
+      hitColor: ed655a
+      color: ed655a
+      despawnEffect: none
+      width: 0.6
+      lifetime: 30
+      knockback: -1
+    }
+  }
+  {
+    name: Destructor_Spiroct_Weapon
+    reload: 15
+    x: 9
+    y: 6
+    rotate: true
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      sapStrength: 1
+      length: 70
+      damage: 64
+      shootEffect: shootSmall
+      hitColor: ed655a
+      color: ed655a
+      despawnEffect: none
+      width: 0.6
+      lifetime: 30
+      knockback: -1
+    }
+  }
+  {
+    name: Destructor_Spiroct_Weapon
+    reload: 23
+    x: 14
+    y: 0
+    rotate: true
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      sapStrength: 1
+      length: 70
+      damage: 64
+      shootEffect: shootSmall
+      hitColor: ed655a
+      color: ed655a
+      despawnEffect: none
+      width: 0.6
+      lifetime: 30
+      knockback: -1
+    }
+  }
+  {
+    name: Destructor_Large_Purple_Mount
+    x: 9
+    y: -7
+    shootY: 7
+    reload: 60
+    shake: 3
+    rotateSpeed: 2.2
+    rotate: true
+    ejectEffect: casing1
+    shootSound: artillery
+    shadow: 8
+    recoil: 3
+    shoot: {
+      shots: 5
+    }
+    velocityRnd: -0.34
+    inaccuracy: 15
+    bullet: {
+      type: ArtilleryBulletType
+      speed: 3
+      damage: 32
+      hitEffect: sapExplosion
+      knockback: 0.8
+      lifetime: 100
+      width: 19
+      height: 19
+      collidesTiles: true
+      ammoMultiplier: 4
+      splashDamageRadius: 70
+      splashDamage: 80
+      backColor: 6d56bf
+      frontColor: bf92f9
+      lightningColor: bf92f9
+      lightning: 3
+      lightningLength: 10
+      smokeEffect: shootBigSmoke2
+      shake: 5
+      status: sapped
+      statusDuration: 600
+    }
+  }
+]
+research: {
+  parent: Destructor_Spiroct
+  requirements:[
+      silicon/80000
+      phase-fabric/50000
+      Sodium_Battery/75000
+      Iron/33000
+      Gold/33000
+      Diamond/7500
+  ]
+}

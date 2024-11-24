@@ -1,0 +1,52 @@
+type: flying
+localizedName: Destructor Gamma
+name: Destructor_Gamma
+isEnemy: false
+lowAltitud: true
+flying: true
+mineSpeed: 12
+mineTier: 4
+buildSpeed: 7.5
+drag: 0.05
+speed: 5
+rotateSpeed: 24
+accel: 0.11
+itemCapacity: 100
+health: 1200
+engineOffset: 6
+hitSize: 11
+armor: 5
+trailLength: 5
+trailColor: ed655a
+engineColor: ed655a
+immunities: [burning, melting, freezing, spore-slowed, wet, muddy, sapped, spore-slowed, tarred]
+weapons: [
+  {
+    name: Destructor_Small_Mount_Weapon
+    top: false
+    reload: 15
+    x: 1
+    y: 2
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      shotDelay: 1.2
+      spread: 0.75
+    }
+    inaccuracy: 3
+    ejectEffect: casing1
+    shootSound: shoot
+    bullet: {
+      type: BasicBulletType
+      speed: 4
+      damage: 30
+      width: 6.5
+      height: 11
+      lifetime: 72
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+      buildingDamageMultiplier: 0.01
+      homingPower: 0.1
+    }
+  }
+]

@@ -1,0 +1,7 @@
+type: SectorPreset
+name: Coastal_Delta
+localizedName: Coastal Delta
+planet: serpulo
+sector: 155
+captureWave: 35
+difficulty: 15
